@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
       password: e.target.value
     });
   }
-  submit() {
+  submit(e) {
     e.preventDefault();
     if (this.state.password && this.state.username ) {
       this.props.onSubmit;
