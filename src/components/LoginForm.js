@@ -24,8 +24,8 @@ class LoginForm extends React.Component {
   }
   submit(e) {
     e.preventDefault();
-    if (this.state.password.length > 0 && this.state.username.length > 0) {
-      this.props.onSubmit();
+    if (this.state.password && this.state.username ) {
+      this.props.onSubmit;
     }
   }
   render() {
